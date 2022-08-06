@@ -2,12 +2,12 @@
 # If x is present then return its location,
 # otherwise return -1
 
-
 def search(arr, n, x):
-
 	for i in range(0, n):
-        #Complete the function here
-	return -1
+		if arr[i] == x:
+			return i
+	else:
+		return -1
 
 
 # Driver Code
@@ -17,6 +17,7 @@ n = len(arr)
 
 # Function call
 result = search(arr, n, x)
+
 if(result == -1):
 	print("Element is not present in array")
 else:
